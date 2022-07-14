@@ -1,25 +1,26 @@
-public class Tyre {
+public class Tire {
 
     private int integrity;
 
-    public Tyre(int integrity) {
+    public Tire(int integrity) {
+
         this.integrity = integrity;
     }
 
-    public boolean spinTyre(int distance) {
-        boolean hasTyreExploded = false;
+    public boolean spinTire(int distance) {
+        boolean hasTireExploded = false;
 
         integrity -= (distance / 10);
 
         if (integrity <= 0) {
-            hasTyreExploded = true;
+            hasTireExploded = true;
             System.out.println("Boooom!! Tyre exploded!");
         }
 
-        return hasTyreExploded;
+        return hasTireExploded;
     }
 
-    public void changeTyre(int newTyreIntegrity) {
+    public void changeTire(int newTyreIntegrity) {
         integrity = newTyreIntegrity;
     }
 

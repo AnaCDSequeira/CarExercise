@@ -4,11 +4,11 @@ public class Main {
 
         Engine engine = new Engine();
         Radio radio = new Radio();
-        Tyre tyre = new Tyre(100);
+        Tire tyre = new Tire(100);
 
         Car car = new Car("BMW", "white", engine, radio, tyre);
 
-        car.accelerate(100);
+        //car.accelerate(100);
         car.accelerate(10);
         car.changeTyre(100);
         car.refuel(50);

@@ -3,9 +3,9 @@ public class Car {
     private String color;
     private Engine engine;
     private Radio radio;
-    private Tyre tyre;
+    private Tire tyre;
 
-    public Car(String brand, String color, Engine engine, Radio radio, Tyre tyre) {
+    public Car(String brand, String color, Engine engine, Radio radio, Tire tyre) {
         this.brand = brand;
         this.color = color;
         this.engine = engine;
@@ -27,7 +27,7 @@ public class Car {
 
         System.out.println("Vrum, vrum for " + distance + "km.");
 
-        boolean hasTyreExploded = tyre.spinTyre(distance);
+        boolean hasTyreExploded = tyre.spinTire(distance);
 
         if (hasTyreExploded) {
             radio.playMusic();
@@ -40,7 +40,7 @@ public class Car {
     }
 
     public void changeTyre(int integrity) {
-        tyre.changeTyre(integrity);
+        tyre.changeTire(integrity);
         System.out.println("Tyre has been changed!");
     }
 
